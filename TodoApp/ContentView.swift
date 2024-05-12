@@ -11,18 +11,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                HStack {
-                    Text("⬜️")
-                    Text("散歩")
-                }
-                HStack {
-                    Text("⬜️")
-                    Text("料理")
-                }
-                HStack {
-                    Text("⬜️")
-                    Text("筋トレ")
-                }
+                ListRow(task: "筋トレ")
+                ListRow(task: "散歩")
+                ListRow(task: "勉強")
                 Text("+").font(.title)
             }
             .navigationBarTitle(Text("Tasks"))
